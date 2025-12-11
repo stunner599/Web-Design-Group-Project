@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players | Football Agency Sierra Leone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-futbol"></i> Football Agency<span>Sierra leone</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Our Players</h1>
+            <p style="text-align: center;">We represent talented players from around the world.</p>
+            
+            <div class="players-grid" id="playersGrid">
+                <div class="player-card" data-player-name="Kai Kamara" data-position="Centre Forward" data-age="41" data-club="FC Cincinnati" data-bio="Kai Kamara is a Sierra Leonean professional footballer, born 1 September 1984. He plays as a striker for major League soccer club FC Cincinnati and the Sierra Leone national team.">
+                    <img src="39049-1720286952.webp" alt="Kai Kamara" class="player-photo" onerror="this.onerror=null;this.src='https://via.placeholder.com/300x150?text=Kai+Kamara';">
+                    <h3>Kai Kamara</h3>
+                    <p><strong>Position:</strong>Centre Forward</p>
+                    <p><strong>Age:</strong> 41</p>
+                    <p><strong>Club:</strong> FC Cincinnati</p>
+                </div>
+                
+                <div class="player-card" data-player-name="Mohamed Buya Turay" data-position="Centre Forward" data-age="30" data-club="Zhetysu Taldykorgan" data-bio="Mohamed Buya Turay (born 10 January 1995) is a Sierra Leonean professional footballer who plays as a Centre Forward for Kazakhstan premier League club.">
+                    <img src="340745-1712911915.webp" alt="Mohamed Buya Turay" class="player-photo" onerror="this.onerror=null;this.src='https://via.placeholder.com/300x150?text=Mohamed+Buya+Turay';">
+                    <h3>Mohamed Buya Turay</h3>
+                    <p><strong>Position:</strong> Centre Forward</p>
+                    <p><strong>Age:</strong> 30</p>
+                    <p><strong>Club:</strong> Zhetysu Taldykorgan</p>
+                </div>
+                
+                <div class="player-card" data-player-name="Alpha Turay" data-position="Midfielder" data-age="20" data-club="Radnicki Kragujevac" data-bio="Alpha Turay (born 26 May 2005) is a Sierra Leonean professional footballer who plays as a midfielder for FK Radnicki 1923 in the serbian Super Liga.">
+                    <img src="1072392-1746554828.webp" alt="Alpha Turay" class="player-photo" onerror="this.onerror=null;this.src='https://via.placeholder.com/300x150?text=Alpha+Turay';">
+                    <h3>Alpha Turay</h3>
+                    <p><strong>Position:</strong> Midfielder</p>
+                    <p><strong>Age:</strong> 20</p>
+                    <p><strong>Club:</strong> Radnicki Kragujevac</p>
+                </div>
+                
+                <div class="player-card" data-player-name="Juma Bah" data-position="Centre Back" data-age="19" data-club="Lagos Lions" data-bio="Juma Bah (born 11 april 2006) is a Sierra Leonean professional footballer who plays as a Centre Back for Ligue 1 club Nice, on loan from premier League club Manchester city, and the Sierra Leone national team.">
+                    <img src="1121298-1756823284.webp" alt="Juma Bah" class="player-photo" onerror="this.onerror=null;this.src='https://via.placeholder.com/300x150?text=Juma+Bah';">
+                    <h3>Juma Bah</h3>
+                    <p><strong>Position:</strong> Centre Back</p>
+                    <p><strong>Age:</strong> 19</p>
+                    <p><strong>Club:</strong> Ligue</p>
+                </div>
+                
+                <div class="player-card" data-player-name="Luca Rossi" data-position="Midfielder" data-age="25" data-club="Milan FC" data-bio="Luca is a dynamic midfielder known for tireless running and versatility.">
+                    <img src="1203677-1700341015.webp" alt="Luca Rossi" class="player-photo" onerror="this.onerror=null;this.src='https://via.placeholder.com/300x150?text=Luca+Rossi';">
+                    <h3>Luca Rossi</h3>
+                    <p><strong>Position:</strong> Midfielder</p>
+                    <p><strong>Age:</strong> 25</p>
+                    <p><strong>Club:</strong> Milan FC</p>
+                </div>
+                
+                <div class="player-card" data-player-name="James Wilson" data-position="Forward" data-age="23" data-club="Manchester United" data-bio="James is an up-and-coming forward with pace, dribbling skills, and promising potential.">
+                    <img src="1319758-1742396150.webp" alt="James Wilson" class="player-photo" onerror="this.onerror=null;this.src='https://via.placeholder.com/300x150?text=James+Wilson';">
+                    <h3>James Wilson</h3>
+                    <p><strong>Position:</strong> Forward</p>
+                    <p><strong>Age:</strong> 23</p>
+                    <p><strong>Club:</strong> Manchester United</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <div id="playerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalPlayerName"></h2>
+            <div id="modalPlayerDetails">
+                <p><strong>Position:</strong> <span id="modalPosition"></span></p>
+                <p><strong>Age:</strong> <span id="modalAge"></span></p>
+                <p><strong>Club:</strong> <span id="modalClub"></span></p>
+                <p><strong>Bio:</strong> <span id="modalBio"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <h3>Football Agency Sierra Leone</h3>
+            <p>Professional football representation since 2015</p>
+            <div class="copyright">
+                <p>&copy; 2025 Football Agency Sierra Leone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+    (function(){
+      const grid = document.querySelector('.players-grid');
+      const modal = document.getElementById('playerModal');
+      const closeBtn = document.querySelector('.close');
+      
+      if(!grid) return;
+      
+      // Move card function
+      function moveCard(card, delta) {
+        const cards = Array.from(grid.children);
+        const idx = cards.indexOf(card);
+        if (idx === -1) return;
+        const n = cards.length;
+        const newIdx = Math.max(0, Math.min(n - 1, idx + delta));
+        if (newIdx === idx) return;
+        grid.removeChild(card);
+        const ref = grid.children[newIdx];
+        if (ref) grid.insertBefore(card, ref);
+        else grid.appendChild(card);
+      }
+      
+      // Open modal with player details
+      function openPlayerModal(playerCard) {
+        const name = playerCard.dataset.playerName;
+        const position = playerCard.dataset.position;
+        const age = playerCard.dataset.age;
+        const club = playerCard.dataset.club;
+        const bio = playerCard.dataset.bio;
+        
+        document.getElementById('modalPlayerName').textContent = name;
+        document.getElementById('modalPosition').textContent = position;
+        document.getElementById('modalAge').textContent = age;
+        document.getElementById('modalClub').textContent = club;
+        document.getElementById('modalBio').textContent = bio;
+        
+        modal.style.display = 'block';
+      }
+      
+      // Close modal
+      function closeModal() {
+        modal.style.display = 'none';
+      }
+      
+      // Click handlers
+      document.addEventListener('click', function(e){
+        if (e.target.matches('.move-3-up')) {
+          const card = e.target.closest('.player-card');
+          if(card) moveCard(card, -3);
+        } else if (e.target.matches('.move-3-down')) {
+          const card = e.target.closest('.player-card');
+          if(card) moveCard(card, 3);
+        } else if (e.target.closest('.player-card') && !e.target.closest('.card-controls')) {
+          const card = e.target.closest('.player-card');
+          if(card) openPlayerModal(card);
+        }
+      });
+      
+      // Close modal when close button is clicked
+      closeBtn.addEventListener('click', closeModal);
+      
+      // Close modal when clicking outside the modal content
+      window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+    })();
+    </script>
+</body>
+</html>
